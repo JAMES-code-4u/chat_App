@@ -2,13 +2,6 @@
 
 A real-time chat application with video/voice calls, AI voice chatting, file sharing, and an interactive login UI.
 
-## Screenshots
-
-![Login Page — animated gradient background with floating particles and glassmorphism card](C:/Users/JAYESH VANIYAR/.gemini/antigravity/brain/5698efc3-0f91-413b-93a3-e35db7bb4e2b/.system_generated/click_feedback/click_feedback_1773940203354.png)
-
-![Registration Form — smooth transition with username, email, password fields](C:/Users/JAYESH VANIYAR/.gemini/antigravity/brain/5698efc3-0f91-413b-93a3-e35db7bb4e2b/.system_generated/click_feedback/click_feedback_1773940252105.png)
-
-![App Demo Recording](C:/Users/JAYESH VANIYAR/.gemini/antigravity/brain/5698efc3-0f91-413b-93a3-e35db7bb4e2b/chatverse_app_demo_1773940176243.webp)
 
 ## What Was Built
 
