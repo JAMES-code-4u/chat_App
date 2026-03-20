@@ -1,0 +1,110 @@
+.stitch-card {
+  position: relative;
+  max-width: 360px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stitch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.2),
+              0 0 40px rgba(139, 92, 246, 0.08);
+}
+
+.stitch-card__glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(139, 92, 246, 0.12) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.stitch-card:hover .stitch-card__glow {
+  opacity: 1;
+}
+
+.stitch-card__content {
+  position: relative;
+  padding: 32px 28px;
+  z-index: 1;
+}
+
+.stitch-card__title {
+  margin: 0 0 12px;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f1f0f5;
+  letter-spacing: -0.02em;
+}
+
+.stitch-card__description {
+  margin: 0 0 24px;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: #a3a0b5;
+}
+
+.stitch-card__button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%);
+  color: #ffffff;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.35),
+              inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.stitch-card__button:hover {
+  background: linear-gradient(135deg, #9b6ff7 0%, #8b5cf6 50%, #7c3aed 100%);
+  box-shadow: 0 6px 24px rgba(139, 92, 246, 0.5),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.stitch-card__button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+}
+
+.stitch-card__button-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.stitch-card__button:hover .stitch-card__button-shine {
+  left: 100%;
+}
